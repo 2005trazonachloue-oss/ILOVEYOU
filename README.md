@@ -85,7 +85,7 @@
     }
 
     #noBtn {
-      position: relative;
+      position: absolute;
     }
 
     @media (max-width: 600px) {
@@ -149,7 +149,7 @@
         heart.textContent = '💗';
         heart.style.left = Math.random() * 100 + 'vw';
         heart.style.animationDelay = Math.random() * 6 + 's';
-        bg.appendChild(heart);z
+        bg.appendChild(heart);
       }
 
       const noBtn = document.getElementById('noBtn');
