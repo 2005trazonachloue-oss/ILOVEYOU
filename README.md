@@ -78,10 +78,10 @@
     }
 
     .btn-group {
-      position: relative
+      position: relative;
       display: flex;
       gap: 20px;
-      justify-content: right;
+      justify-content: center;
       margin-top: 40px;
     }
 
