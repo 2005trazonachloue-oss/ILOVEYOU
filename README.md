@@ -78,6 +78,7 @@
     }
 
     .btn-group {
+      position: relative
       display: flex;
       gap: 20px;
       justify-content: center;
@@ -85,7 +86,7 @@
     }
 
     #noBtn {
-      position: relative;
+      position: absolute;
     }
 
     @media (max-width: 600px) {
