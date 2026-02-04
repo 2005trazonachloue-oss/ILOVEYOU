@@ -135,21 +135,8 @@
         <h1>Will you be my Valentine? 💘</h1>
         <div class="btn-group">
           <button onclick="yesClicked()">Yes 💕</button>
-          <button id="noBtn">No</button>
-          <script>
-  const btn = document.getElementById("noBtn");
-
-  btn.addEventListener("mouseenter", () => {
-    const maxX = window.innerWidth - btn.offsetWidth;
-    const maxY = window.innerHeight - btn.offsetHeight;
-
-    const x = Math.random() * maxX;
-    const y = Math.random() * maxY;
-
-    btn.style.left = `${x}px`;
-    btn.style.top = `${y}px`;
-  });
-</script>
+          <button id="noBtn">No :)</button>
+          
         </div>
       `;
 
