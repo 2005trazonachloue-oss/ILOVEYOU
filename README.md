@@ -94,7 +94,6 @@
     }
  </style>
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <style>
   #content {
   font-family: 'Pacifico', cursive;
@@ -111,7 +110,7 @@
 
     if (!params.get('valentine')) {
       content.innerHTML = `
-        <h1>Reason why I love you:</h1>
+        <h1>Reasons why I love you:</h1>
         <ol>
           <li>You're amazing</li>
           <li>You're affectionate</li>
