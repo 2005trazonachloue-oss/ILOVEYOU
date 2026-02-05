@@ -95,8 +95,15 @@
  </style>
 </head>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<style>
+  #content {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.2rem;
+  line-heigh: 1.8;
+  }
+</style>
 <body>
-  <div class="container" id="content"></div>
+  <div id="content"></div>
 
   <script>
     const content = document.getElementById('content');
