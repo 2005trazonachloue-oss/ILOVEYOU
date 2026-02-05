@@ -173,14 +173,22 @@
     }
 
     function yesClicked() {
-      confetti({
-        particleCount: 150,
-        spread: 90,
-        origin: { y: 0.6 },
-        shapes: ['heart'],
-        colors: ['#ff8fb1', '#ffb3c6', '#ffd6e8']
-      });
-    }
+  confetti({
+    particleCount: 150,
+    spread: 90,
+    origin: { y: 0.6 },
+    shapes: ['heart'],
+    colors: ['#ff8fb1', '#ffb3c6', '#ffd6e8']
+  });
+
+  const content = document.getElementById('content');
+
+  content.innerHTML = `
+    <h1 style="text-align:center; font-size:3rem;">
+      YEEEY I LOVE YOU 💖💖💖
+    </h1>
+  `;
+}
   </script>
 </body>
 </html>
