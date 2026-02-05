@@ -174,6 +174,7 @@
     }
   function yesClicked() {
   accepted = true;
+
   confetti({
     particleCount: 200,
     spread: 120,
