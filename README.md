@@ -179,10 +179,10 @@
       });
 
       document.getElementById('content').innerHTML = `
-        <h1 style="text-align:center; font-size:3rem;">
+        <h1 class="yay-title">
           YEEEY I LOVE YOU 💖💖💖
         </h1>
-        <p style="text-align:center; font-size:1.5rem;">
+        <p class="yay-text">
           Forever and a day 💕
         </p>
       `;
