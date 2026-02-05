@@ -1,11 +1,13 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>For You 💗</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
   <style>
     body {
       margin: 0;
@@ -57,7 +59,6 @@
       background: #ff6f9c;
     }
 
-    /* Valentine Page */
     .hearts-bg {
       position: fixed;
       inset: 0;
@@ -88,19 +89,9 @@
     #noBtn {
       position: relative;
     }
-
-    @media (max-width: 600px) {
-      ol { font-size: 1rem; }
-    }
- </style>
+  </style>
 </head>
-<style>
-  #content {
-  font-family: 'Pacifico', cursive;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  }
-</style>
+
 <body>
   <div class="container" id="content"></div>
 
@@ -141,17 +132,17 @@
       `;
     } else if (!accepted) {
       content.innerHTML = `
-  <h1>Will you be my Valentine? 💘</h1>
-  <div class="btn-group">
-    <button onclick="alert('YES CLICKED')">Yes 💕</button>
-    <button id="noBtn">No 🙄</button>
-  </div>
-`;
+        <h1>Will you be my Valentine? 💘</h1>
+        <div class="btn-group">
+          <button onclick="yesClicked()">Yes 💕</button>
+          <button id="noBtn">No 🙄</button>
+        </div>
+      `;
 
-      // Floating hearts
       const bg = document.createElement('div');
       bg.className = 'hearts-bg';
       document.body.appendChild(bg);
+
       for (let i = 0; i < 30; i++) {
         const heart = document.createElement('div');
         heart.className = 'heart';
@@ -166,34 +157,32 @@
         const x = Math.random() * 200 - 100;
         const y = Math.random() * 120 - 60;
         noBtn.style.transform = `translate(${x}px, ${y}px)`;
-    });
+      });
     }
 
     function openValentine() {
-  window.location.href = window.location.pathname + '?valentine=true';
+      window.open(window.location.pathname + '?valentine=true', '_blank');
     }
-  function yesClicked() {
-  accepted = true;
 
-  confetti({
-    particleCount: 200,
-    spread: 120,
-    origin: { y: 0.6 },
-    shapes: ['circle'],
-    colors: ['#ff8fb1', '#ffb3c6', '#ffd6e8']
-  });
+    function yesClicked() {
+      accepted = true;
 
-  const box = document.getElementById('content');
+      confetti({
+        particleCount: 200,
+        spread: 120,
+        origin: { y: 0.6 },
+        colors: ['#ff8fb1', '#ffb3c6', '#ffd6e8']
+      });
 
-  box.innerHTML = `
-    <h1 style="text-align:center; font-size:3rem;">
-      YEEEY I LOVE YOU 💖💖💖
-    </h1>
-    <p style="text-align:center; font-size:1.5rem;">
-      Forever and a day 💕
-    </p>
-  `;
-}
-</script>
+      document.getElementById('content').innerHTML = `
+        <h1 style="text-align:center; font-size:3rem;">
+          YEEEY I LOVE YOU 💖💖💖
+        </h1>
+        <p style="text-align:center; font-size:1.5rem;">
+          Forever and a day 💕
+        </p>
+      `;
+    }
+  </script>
 </body>
 </html>
