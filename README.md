@@ -8,17 +8,22 @@
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Pacifico', cursive;
-      background: #ffd6e8;
-      color: #5a2a3c;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
+  *,
+  *::before,
+  *::after {
+    font-family: 'Pacifico', cursive !important;
+  }
+
+  body {
+    margin: 0;
+    background: #ffd6e8;
+    color: #5a2a3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
 
     .container {
       max-width: 800px;
