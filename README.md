@@ -95,11 +95,11 @@
   </style>
 </head>
 <body>
-  <div class="container" id="content"></div>
+  <div id="content"></div>
 
   <script>
-    const content = document.getElementById('content');
     const params = new URLSearchParams(window.location.search);
+    const content = document.getElementById('content');
 
     if (!params.get('valentine')) {
       content.innerHTML = `
