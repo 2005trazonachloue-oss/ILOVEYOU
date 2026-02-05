@@ -103,7 +103,7 @@
   }
 </style>
 <body>
-  <div id="content"></div>
+  <div class="container" id="content"></div>
 
   <script>
     const content = document.getElementById('content');
